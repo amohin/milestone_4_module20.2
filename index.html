@@ -1,0 +1,60 @@
+
+<!-- Now i Learing about DOM
+* it means Doccument object model 
+-->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <h1>i am ashraful islam mohin</h1>
+        <p>this is a paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quidem amet ut consequuntur? Sapiente exercitationem numquam harum recusandae dolorem hic.</p>
+        <h1>this 2nd head</h1>
+
+        <ul>
+            <li>ashraful </li>
+            <li>islam </li>
+            <li>mohin </li>
+        </ul>
+
+
+        <script>
+            const student = {
+                name : "ashraful",
+                id : 1037,
+                study : function(subject){
+                    console.log('studying subject:', subject);
+                }
+            }
+            // document.getElementsByTagName
+
+            const liCollection = document.getElementsByTagName('li');
+            console.log(liCollection);
+            for( const li of liCollection ){
+                console.log(li.innerText);
+            }
+
+            // all head
+
+            const allH1 = document.getElementsByTagName('h1');
+            console.log(allH1);
+            for( const h1 of allH1 ){
+                console.log(h1.innerText);
+            }
+
+        </script>
+
+
+        <!-- java script src link -->
+         
+        <script src="js.js"></script>
+
+        
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head-tittle{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <h1>ashraful islam mohin</h1>
+    <div id="old">
+        <p >Lorem ipsum, dolor sit amet <span>consectetur adipisicing elit.</span> Reiciendis, <span>doloremque</span> incidunt? Quae repellendus quibusdam itaque, nobis ullam voluptate veritatis fuga.</p>
+    </div>
+    <h2 id="head-tittle">this is <span>2nd</span> heading </h2>
+    <ul>
+        <li>puri</li>
+        <li>shinggara</li>
+        <li>beguni</li>
+        <li>alur chop</li>
+    </ul>
+    <ul>
+        <li class="food-class">puri</li>
+        <li class="food-class">shinggara</li>
+        <li class="food-class">beguni</li>
+        <li class="food-class">alur chop</li>
+    </ul>
+    <script>
+
+        // get element by id 
+
+        const foodTittleH1 = document.getElementById('head-tittle');
+        console.log(foodTittleH1.innerText);
+
+        // get element by class name
+
+        const foodlist = document.getElementsByClassName('food-class')
+        console.log(foodlist);
+        for( const food of foodlist ){
+            console.log(food.innerText);
+        }
+
+        // query selector All
+        
+        const spanElements = document.querySelectorAll('#old p span');
+        
+        for( const span of spanElements){
+            console.log(span.innerText);
+        }
+
+    </script>
+    
+</body>
+</html>
